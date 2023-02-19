@@ -105,7 +105,7 @@ function WeatherWidget() {
                   )}
                 </h5>
                 <h5 className="mb-3">
-                  City:{" "}
+                  State:{" "}
                   {location ? (
                     location.state
                   ) : (
