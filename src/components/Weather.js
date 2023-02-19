@@ -58,6 +58,10 @@ function CurrentTime() {
   return currentTime ? currentTime : "";
 }
 
+function CurrentDate() {
+  return new Date().toLocaleDateString();
+}
+
 function WeatherWidget() {
   const [location, setLocation] = useState();
   const [weather, setWeather] = useState();
@@ -129,9 +133,11 @@ function WeatherWidget() {
           </div>
           <div
             className="card-footer mx-auto"
-            style={{ backgroundColor: "transparent" }}
+            style={{ backgroundColor: "transparent", textAlign: "center" }}
           >
             <h2>
+              <CurrentDate />
+              <br />
               <CurrentTime />
             </h2>
           </div>
