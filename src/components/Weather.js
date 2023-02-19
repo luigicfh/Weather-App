@@ -32,7 +32,7 @@ function Header() {
   return (
     <nav
       className="navbar"
-      style={{ backgroundColor: "rgba(255,255,255, 0.7)" }}
+      style={{ backgroundColor: "rgba(255,255,255, 0.6)" }}
     >
       <div className="container-fluid">
         <span className="navbar-brand mb-0 h1 d-flex">
