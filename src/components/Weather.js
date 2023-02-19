@@ -66,11 +66,12 @@ function WeatherWidget() {
   }, []);
   return (
     <div className="row mt-3 mx-auto">
-      <div className="col-10 mx-auto">
+      <div className="col-md-8 col-12 mx-auto">
         <div
           style={{
-            backgroundColor: "rgba(255,255,255, 0.8)",
+            backgroundColor: "rgba(255,255,255, 0.7)",
             borderRadius: "20px",
+            padding: "20px",
           }}
           className="card"
         >
@@ -103,7 +104,7 @@ function WeatherWidget() {
                     <small style={{ color: "gray" }}>fetching city...</small>
                   )}
                 </h5>
-                <h5>
+                <h5 className="mb-3">
                   City:{" "}
                   {location ? (
                     location.state
@@ -126,10 +127,13 @@ function WeatherWidget() {
               </div>
             </div>
           </div>
-          <div className="card-footer">
-            <h5>
+          <div
+            className="card-footer mx-auto"
+            style={{ backgroundColor: "transparent" }}
+          >
+            <h2>
               <CurrentTime />
-            </h5>
+            </h2>
           </div>
         </div>
       </div>
