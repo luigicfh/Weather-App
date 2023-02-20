@@ -136,8 +136,8 @@ function WeatherWidget() {
             style={{ backgroundColor: "transparent", textAlign: "center" }}
           >
             <h2>
-              {/* <CurrentDate />
-              <br /> */}
+              <CurrentDate />
+              <br />
               <CurrentTime />
             </h2>
           </div>
